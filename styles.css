@@ -1,0 +1,31 @@
+body{
+  background-color: rgb(244, 255, 240);
+  margin-left: 15px;
+  }
+
+input, select {
+  width:100%;
+  padding: 12px; 
+  border: 2px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+
+}
+.container{
+  width:300px;
+  border: 1px solid #cccccccb;
+  padding: 6px;
+  background-color: rgb(240, 250, 255);
+}
+
+button[type=submit] {
+  background-color: #0ebf8d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 100px;
+}
