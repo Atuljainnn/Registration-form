@@ -38,3 +38,28 @@ document.querySelector('.js-container').innerHTML=
     <button type="submit"><a href="submitted.html">submit</a></button>
 </form>`;
 
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  const nameError = document.getElementById("nameError");
+  const emailError = document.getElementById("emailError");
+
+  let isValid = true;
+  if (name === "") {
+    nameError.textContent = "Name is required";
+    isValid = false;
+  } else {
+    nameError.textContent = "";
+  }
+
+  if (email === "") {
+    emailError.textContent = "Email is required";
+    isValid = false;
+  } else {
+    emailError.textContent = "";
+  }
+  if (!isValid) {
+    event.preventDefault();
+  }
+});
